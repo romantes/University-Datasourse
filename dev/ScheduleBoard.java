@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.mentat.OOP.task6.Exceptions.*;
+
 public class ScheduleBoard {
 	private List<Lecture> lectures = new ArrayList<Lecture>();
 
 	public List<Lecture> getLectures() {
 		return lectures;
 	}
-	
+
 	public void addLecture(Lecture lecture) throws LectureExistsException {
-		if (!lectures.contains(lecture)) 
+		if (!lectures.contains(lecture))
 			lectures.add(lecture);
-		else throw new LectureExistsException();
+		else
+			throw new LectureExistsException();
 	}
-	
-	private List<Lecture> extractLecturesByDate(List<Lecture> lectures, Date date) {
+
+	public List<Lecture> extractLecturesByDate(List<Lecture> lectures, Date date) {
 		ArrayList<Lecture> result = new ArrayList<Lecture>();
 		for (Lecture l : lectures) {
 			if (l.getDate().getYear() == date.getYear()
@@ -28,35 +31,34 @@ public class ScheduleBoard {
 		return result;
 	}
 
-	public List<Lecture> extractLecturesByPersonAndDate(Date date, Person person) {
+	public List<Lecture> extractLecturesByPersonAndDate(Date date, Person person)
+			throws PersonExistsException {
 		ArrayList<Lecture> result = new ArrayList<Lecture>();
 		long personId = person.getPersonId();
-		for (Lecture l : lectures) {
-			if ((l.getGroup().getStudentById(personId) != null)
-					|| (l.getProfessor().getPersonId() == personId)) {
-				result.add(l);
+
+		if (person instanceof Professor) {
+			for (Lecture l : lectures) {
+				if (l.getProfessor().getPersonId() == personId) {
+					result.add(l);
+				}
+			}
+		}
+		if (person instanceof Student) {
+			String groupNumber = ((Student) person).getGoupNumber();
+			for (Lecture l : lectures) {
+				if (l.getGroup().getGroupNumber().equals(groupNumber)) {
+					result.add(l);
+
+				}
 			}
 		}
 		return extractLecturesByDate(result, date);
 	}
-	
-	public List<Lecture> extractLecturesByPersonIdAndDate(Date date, Long personId) {
-		Person person = getPersonById(personId);
-		return extractLecturesByPersonAndDate(date, person); 
+
+	public List<Lecture> extractLecturesByIdAndDate(Date date, Long personId)
+			throws PersonExistsException {
+		Person person = University.getPersonById(personId);
+		return extractLecturesByPersonAndDate(date, person);
 	}
-	
-	public Person getPersonById (Long personId) {
-		if (University.getStudentsIdSet().contains(personId)) {
-			List <Group> groups = University.getGroups();
-			for (Group g : groups) {
-				if (g.getStudentById(personId) != null);
-				return g.getStudentById(personId);
-			}
-		} 
-		if (University.getProfessorIdset().contains(personId)) {
-			return University.getProfessorById(personId);
-		}
-		return null;	
-	}
-	
+
 }

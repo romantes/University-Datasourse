@@ -1,6 +1,8 @@
 package com.mentat.OOP.task6;
 
 import java.util.Date;
+import com.mentat.OOP.task6.Exceptions.*;
+
 
 public class Lecture {
 	private Date date;
@@ -50,12 +52,12 @@ public class Lecture {
 	}
 
 	public Lecture createLecture(Date date, String roomNumber,
-			String subjectTitle, long personId, String groupNumber) {
+			String subjectTitle, long personId, String groupNumber) throws UniversityObjectExistanseException {
 		Lecture lecture = new Lecture();
 		lecture.date = date;
 		lecture.room = University.getRoomByNumber(roomNumber);
 		lecture.subject = University.getSubjectByTitle(subjectTitle);
-		lecture.professor = University.getProfessorById(personId);
+		lecture.professor = (Professor) University.getPersonById(personId);
 		lecture.group = University.getGroupByNumber(groupNumber);
 		return lecture;
 	}

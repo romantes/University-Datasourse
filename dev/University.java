@@ -1,105 +1,103 @@
 package com.mentat.OOP.task6;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
+import com.mentat.OOP.task6.Exceptions.*;
+
 public class University {
-	private static List<Room> rooms = new ArrayList<Room>();
-	private static List<Subject> subjects = new ArrayList<Subject>();
-	private static List<Professor> professors = new ArrayList<Professor>();
-	private static List<Group> groups = new ArrayList<Group>();
-	private static Set<Long> studentsIdSet = new HashSet<Long>();
-	private static Set<Long> professorIdset = new HashSet<Long>();
+	private static Set<Room> rooms = new HashSet<>();
+	private static Set<Subject> subjects = new HashSet<>();
+	private static Set<Person> persons = new HashSet<>();
+	private static Set<Group> groups = new HashSet<>();
 
 	public static void addRoom(Room room) throws RoomExistsException {
-		if (rooms.contains(room))
+		if (rooms.contains(room)) {
 			throw new RoomExistsException();
-		else
+		} else {
 			rooms.add(room);
+		}
 	}
 
 	public static void addSubject(Subject subject)
 			throws SubjectExistsException {
-		if (subjects.contains(subject))
+		if (subjects.contains(subject)) {
 			throw new SubjectExistsException();
-		else
+		} else {
 			subjects.add(subject);
+		}
 	}
 
-	public static void addProfessor(Professor professor)
+	public static void addPerson(Person person)
 			throws PersonExistsException {
-		if (professors.contains(professor)
-				|| professorIdset.contains(professor.getPersonId()))
+		if (persons.contains(person)) {
 			throw new PersonExistsException();
-		else {
-			professors.add(professor);
-			professorIdset.add(professor.getPersonId());
+		} else {
+			persons.add(person);
 		}
 	}
 
 	public static void addGroup(Group group) throws GroupExistsException {
-		if (groups.contains(group))
+		if (groups.contains(group)) {
 			throw new GroupExistsException();
-		else
+		} else {
 			groups.add(group);
+		}
 	}
 
-	public static Room getRoomByNumber(String roomNumber) {
+	public static void addStudentToGroup(Group group, Student student)
+			throws UniversityObjectExistanseException {
+		if (!groups.contains(group)) {
+			throw new GroupExistsException();
+		}
+		if (!persons.contains(student)) {
+			throw new StudentExistException();
+		} else {
+			String groupNumber = group.getGroupNumber();
+			Long personId = student.getPersonId();
+			University.getGroupByNumber(groupNumber).getStudents()
+					.add(personId);
+			student.setGoupNumber(groupNumber);
+		}
+	}
+	
+	public static Room getRoomByNumber(String roomNumber)
+			throws RoomExistsException {
 		for (Room r : rooms) {
 			if (r.getRoomNumber().equals(roomNumber))
 				return r;
 		}
-		return null;
+		throw new RoomExistsException();
 	}
 
-	public static Set<Long> getStudentsIdSet() {
-		return studentsIdSet;
-	}
-
-	public static Set<Long> getProfessorIdset() {
-		return professorIdset;
-	}
-	
-	public static List<Group> getGroups() {
-		return groups;
-	}
-
-	public static void setGroups(List<Group> groups) {
-		University.groups = groups;
-	}
-
-	public static void setStudentsIdSet(Set<Long> studentsIdSet) {
-		University.studentsIdSet = studentsIdSet;
-	}
-
-	public static void setProfessorIdset(Set<Long> professorIdset) {
-		University.professorIdset = professorIdset;
-	}
-
-	public static Subject getSubjectByTitle(String subjectTitle) {
+	public static Subject getSubjectByTitle(String subjectTitle)
+			throws SubjectExistsException {
 		for (Subject s : subjects) {
-			if (s.getSubjectTitle().equals(subjectTitle))
+			if (s.getSubjectTitle().equals(subjectTitle)) {
 				return s;
+			}
 		}
-		return null;
+		throw new SubjectExistsException();
 	}
 
-	public static Professor getProfessorById(long professorId) {
-		for (Professor p : professors) {
-			if (p.getPersonId() == professorId)
+	public static Person getPersonById(long personId)
+			throws PersonExistsException {
+		for (Person p : persons) {
+			if (p.getPersonId() == personId) {
 				return p;
+			}
 		}
-		return null;
+		throw new PersonExistsException();
 	}
 
-	public static Group getGroupByNumber(String groupNumber) {
+	public static Group getGroupByNumber(String groupNumber)
+			throws GroupExistsException {
 		for (Group g : groups) {
-			if (g.getGroupNumber().equals(groupNumber))
+			if (g.getGroupNumber().equals(groupNumber)) {
 				return g;
+			}
 		}
-		return null;
+		throw new GroupExistsException();
 	}
-
+	 
 }

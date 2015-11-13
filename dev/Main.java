@@ -1,12 +1,18 @@
 package com.mentat.OOP.task6;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Formatter;
 import java.util.List;
 
+
+
+
+
+import com.mentat.OOP.task6.Exceptions.*;
+
 public class Main {
-	public static void main(String[] args) throws RoomExistsException,
-			SubjectExistsException, PersonExistsException,
-			GroupExistsException, LectureExistsException, StudentExistException {
+	public static void main(String[] args) throws UniversityObjectExistanseException {
 
 		ScheduleBoard sb = new ScheduleBoard();
 		// dates
@@ -18,9 +24,13 @@ public class Main {
 		// /dates
 
 		// rooms
-		University.addRoom(new Room("123c"));
-		University.addRoom(new Room("220v"));
-		University.addRoom(new Room("330g"));
+		Room room1 = new Room("123c");
+		Room room2 = new Room("220v");
+		Room room3 = new Room("330g");
+		
+		University.addRoom(room1);
+		University.addRoom(room2);
+		University.addRoom(room3);
 		// /rooms
 
 		// subjects
@@ -29,30 +39,42 @@ public class Main {
 		University.addSubject(new Subject("Philosophy"));
 		// /subjects
 
-		// professors
-		University.addProfessor(new Professor(12345, "Ivanov", "Ivan"));
-		University.addProfessor(new Professor(666, "Gates", "Bill"));
-		University.addProfessor(new Professor(777, "Martens", "Dr."));
+		// professors	
+		Professor professor1 = new Professor(12345, "Ivanov", "Ivan");
+		Professor professor2 = new Professor(666, "Gates", "Bill");
+		Professor professor3 = new Professor(777, "Martens", "Dr.");
+		
+		University.addPerson(professor1);
+		University.addPerson(professor2);
+		University.addPerson(professor3);
 		// /professors
 
 		// groups
-		University.addGroup(new Group("210/q"));
-		University.addGroup(new Group("110/r"));
+		Group group1 = new Group ("210/q");
+		Group group2 = new Group("110/r");
+		
+		University.addGroup(group1);
+		University.addGroup(group2);
 		// /groups
 
 		// students
-		University.getGroupByNumber("210/q").addStudent(
-				new Student(999, "Egor", "Egorov"));
-		University.getGroupByNumber("210/q").addStudent(
-				new Student(888, "Sidor", "Sidorov"));
-		University.getGroupByNumber("210/q").addStudent(
-				new Student(444, "Alexandr", "Alexandrov"));
+		Student student1 = new Student(999, "Egor", "Egorov");
+		Student student2 = new Student(888, "Sidor", "Sidorov");
+		Student student3 = new Student(444, "Alexandr", "Alexandrov");
+	
+		University.addPerson(student1);
+		University.addPerson(student2);
+		University.addPerson(student3);	
+		
+		University.addStudentToGroup(group1, student1);
+		University.addStudentToGroup(group1, student2);
+		University.addStudentToGroup(group1, student3);
 		// /students
 
 		// addLecture
 		Lecture l1 = new Lecture().createLecture(l1date, "123c", "Algebra",
 				666, "210/q");
-		Lecture l2 = new Lecture().createLecture(l2date, "220c", "CS", 777,
+		Lecture l2 = new Lecture().createLecture(l2date, "220v", "CS", 777,
 				"110/r");
 		Lecture l3 = new Lecture().createLecture(l3date, "330g", "CS", 666,
 				"210/q");
@@ -67,21 +89,20 @@ public class Main {
 		sb.addLecture(l4);
 		sb.addLecture(l5);
 		// /addLecture
-		
-		
-		Date searchDate = l4date;
-		Long personId = (long)888;
 
-		List<Lecture> searchResult = sb.extractLecturesByPersonIdAndDate(searchDate, personId);
-		System.out.println("Day schedule for: " + sb.getPersonById(personId) 
-				+ "Month: " + searchDate.getMonth() + " Day: "
-				+ searchDate.getDate());
+		Date searchDate = new Date(2015, 4, 5);
+		Long personId = (long) 888;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		List<Lecture> searchResult = sb.extractLecturesByIdAndDate(
+				searchDate, personId);
+		
+		System.out.println("Day schedule for: " + University.getPersonById(personId).toString()
+				+ "Date: " + sdf.format(searchDate));
+		
 		for (Lecture l : searchResult) {
 			System.out.println(l.toString());
 		}
-		
-		System.out.println("idStudents set: " + University.getStudentsIdSet().toString());
-		System.out.println("idProfessor set: " + University.getProfessorIdset().toString());
+
 	}
 
 }

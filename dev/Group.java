@@ -1,16 +1,12 @@
 package com.mentat.OOP.task6;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Group {
 	private long groupId;
 	private String groupNumber;
-	private List<Student> students;
-
-	{
-		students = new ArrayList<Student>();
-	}
+	private Set<Long> students = new HashSet();
 
 	public Group(String groupNumber) {
 		this.groupNumber = groupNumber;
@@ -24,15 +20,15 @@ public class Group {
 	public long getGroupId() {
 		return groupId;
 	}
-
+	
 	public String getGroupNumber() {
 		return groupNumber;
 	}
 	
-	public List<Student> getStudents() {
+	public Set<Long> getStudents() {
 		return students;
 	}
-
+	
 	public void setGroupId(long groupId) {
 		this.groupId = groupId;
 	}
@@ -41,22 +37,7 @@ public class Group {
 		this.groupNumber = groupNumber;
 	}
 
-	public void addStudent(Student student) throws StudentExistException {
-		if (!students.contains(student)
-				|| !University.getStudentsIdSet()
-						.contains(student.getPersonId())) {
-			students.add(student);
-			University.getStudentsIdSet().add(student.getPersonId());
-		} else throw new StudentExistException();
-	}
-
-	public Student getStudentById(long studentId) {
-		for (Student s : students) {
-			if (s.getPersonId() == studentId)
-				return s;
-		}
-		return null;
-	}
+	
 
 	@Override
 	public int hashCode() {
