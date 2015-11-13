@@ -1,7 +1,9 @@
 package com.mentat.OOP.task6.Exceptions;
 
-@SuppressWarnings("serial")
 public class LectureExistsException extends UniversityObjectExistanseException {
+
+	private static final long serialVersionUID = -8105840375729162360L;
+
 	public LectureExistsException() {
 		super();
 	}

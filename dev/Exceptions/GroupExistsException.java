@@ -1,8 +1,10 @@
 package com.mentat.OOP.task6.Exceptions;
 
-@SuppressWarnings("serial")
+
 public class GroupExistsException extends UniversityObjectExistanseException {
-	
+
+	private static final long serialVersionUID = -13850010769358079L;
+
 	public GroupExistsException() {
 		super();
 	}

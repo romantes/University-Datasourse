@@ -1,7 +1,9 @@
 package com.mentat.OOP.task6.Exceptions;
 
-@SuppressWarnings("serial")
 public class SubjectExistsException extends UniversityObjectExistanseException {
+
+	private static final long serialVersionUID = -916942570732444608L;
+
 	public SubjectExistsException() {
 		super();
 	}

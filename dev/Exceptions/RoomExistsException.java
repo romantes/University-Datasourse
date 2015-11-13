@@ -1,7 +1,9 @@
 package com.mentat.OOP.task6.Exceptions;
 
-@SuppressWarnings("serial")
 public class RoomExistsException extends UniversityObjectExistanseException {
+
+	private static final long serialVersionUID = 2126368443897468289L;
+
 	public RoomExistsException() {
 		super();
 	}

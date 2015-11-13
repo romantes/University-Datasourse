@@ -1,7 +1,8 @@
 package com.mentat.OOP.task6.Exceptions;
 
-@SuppressWarnings("serial")
 public class StudentExistException extends PersonExistsException {
+
+	private static final long serialVersionUID = -8575740833982605217L;
 
 	public StudentExistException() {
 		super();
