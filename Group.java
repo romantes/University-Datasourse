@@ -1,4 +1,4 @@
-package com.mentat.OOP.task6;
+package com.mentat.University;
 
 import java.util.HashSet;
 import java.util.Set;

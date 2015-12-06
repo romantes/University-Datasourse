@@ -1,4 +1,4 @@
-package com.mentat.OOP.task6;
+package com.mentat.University;
 
 public class Room {
 	private long roomId;

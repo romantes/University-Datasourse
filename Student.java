@@ -1,4 +1,4 @@
-package com.mentat.OOP.task6;
+package com.mentat.University;
 
 public class Student extends Person {
 	private String goupNumber;

@@ -1,4 +1,4 @@
-package com.mentat.OOP.task6;
+package com.mentat.University;
 
 public abstract class Person {
 	private long personId;
@@ -61,7 +61,7 @@ public abstract class Person {
 	
 	@Override
 	public String toString() {
-		return " personId: " + personId + ", " + firstName + ", " + secondName + "| ";
+		return firstName + ", " + secondName + ", " + "Id: " + personId;
 	}
 	
 	

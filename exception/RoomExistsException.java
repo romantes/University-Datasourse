@@ -1,4 +1,4 @@
-package com.mentat.OOP.task6.Exceptions;
+package com.mentat.University.exception;
 
 public class RoomExistsException extends UniversityObjectExistanseException {
 

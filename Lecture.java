@@ -1,15 +1,17 @@
-package com.mentat.OOP.task6;
+package com.mentat.University;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import com.mentat.OOP.task6.Exceptions.*;
+
+import com.mentat.University.exception.*;
 
 
 public class Lecture {
 	private Date date;
-	private Room room;
 	private Subject subject;
 	private Professor professor;
 	private Group group;
+	private Room room;
 
 	public Date getDate() {
 		return date;
@@ -51,15 +53,13 @@ public class Lecture {
 		this.group = group;
 	}
 
-	public Lecture createLecture(Date date, String roomNumber,
-			String subjectTitle, long personId, String groupNumber) throws UniversityObjectExistanseException {
-		Lecture lecture = new Lecture();
-		lecture.date = date;
-		lecture.room = University.getRoomByNumber(roomNumber);
-		lecture.subject = University.getSubjectByTitle(subjectTitle);
-		lecture.professor = (Professor) University.getPersonById(personId);
-		lecture.group = University.getGroupByNumber(groupNumber);
-		return lecture;
+	public Lecture(Date date, Subject subject, Professor professor,
+			Group group, Room room) {
+		this.date = date;
+		this.subject = subject;
+		this.professor = professor;
+		this.group = group;
+		this.room = room;
 	}
 
 	@Override
@@ -95,7 +95,9 @@ public class Lecture {
 
 	@Override
 	public String toString() {
-		return "Lecture " + subject +" Time: "+ date.getHours() + ":" + date.getMinutes() + "|" + room + "professor: " + professor + group;
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		return "Lecture " + subject + "Date: "+ formatter.format(date) + 
+				" |" + room + "professor: " + professor + " " + group;
 	}
 
 }
