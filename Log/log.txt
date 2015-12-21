@@ -9099,3 +9099,1731 @@
 2015-12-20 19:42:02 TRACE LectureDAO:258 - Connection closed
 2015-12-20 19:42:02 TRACE UniversityController:141 - [Lecture PhysicsDate: 2015-12-12 12:00 |404professor: Steve, Jobs, Id: 111 321/rsdrp, Lecture GiometryDate: 2015-12-11 11:30 |333professor: Issak, Newton, Id: 110 321/rsdrp, Lecture LiteratureDate: 2015-12-01 11:00 |202professor: Viktor, Jushchenko, Id: 106 333/cpx, Lecture PhysicsDate: 2015-11-29 09:00 |202professor: Nikolo, Tesla, Id: 109 666/ussr, Lecture BasketballDate: 2015-11-28 15:00 |202professor: Viktor, Jushchenko, Id: 106 221/x, Lecture GiometryDate: 2015-11-26 18:30 |505professor: Steve, Jobs, Id: 111 666/ussr, Lecture GiometryDate: 2015-11-26 18:30 |404professor: Issak, Newton, Id: 110 666/ussr, Lecture CryptographyDate: 2015-11-26 10:00 |505professor: Steve, Jobs, Id: 111 666/ussr, Lecture LiteratureDate: 2015-11-26 10:00 |333professor: Stanislav, Marlinskaj, Id: 107 333/cpx, Lecture PhysicsDate: 2015-11-26 10:00 |202professor: Nikolo, Tesla, Id: 109 221/x, Lecture PhylosophyDate: 2015-11-25 13:00 |333professor: Aristotel, Aphinskik, Id: 112 333/cpx, Lecture BasketballDate: 2015-11-25 09:00 |404professor: Viktor, Jushchenko, Id: 106 321/rsdrp, Lecture GiometryDate: 2015-11-25 09:00 |505professor: Steve, Jobs, Id: 111 666/ussr]
 >>>>>>> Stashed changes
+2015-12-21 11:15:21 TRACE DAOFactory:25 - Properties loaded: {log4j.appender.stdout=org.apache.log4j.ConsoleAppender, log4j.rootLogger=TRACE, file, log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n, log4j.appender.file.File=/Users/apple/Java/University/University/Log/log.txt, log4j.appender.file.layout=org.apache.log4j.PatternLayout, log4j.appender.file.MaxBackupIndex=10, log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n, log4j.appender.file.MaxFileSize=10MB, log4j.appender.file=org.apache.log4j.RollingFileAppender, log4j.appender.stdout.layout=org.apache.log4j.PatternLayout, log4j.appender.stdout.Target=System.out}
+2015-12-21 11:15:21 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:21 INFO  LectureDAO:210 - getAllLectures ()
+2015-12-21 11:15:21 TRACE LectureDAO:220 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@57ebbd68
+2015-12-21 11:15:21 TRACE LectureDAO:223 - Statement created
+2015-12-21 11:15:21 TRACE LectureDAO:226 - Get resultSet
+2015-12-21 11:15:21 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:21 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:21 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:21 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4fddd0b
+2015-12-21 11:15:21 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:21 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:21 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:21 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@77e9db60
+2015-12-21 11:15:21 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:21 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:21 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:21 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:21 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:21 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:21 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:21 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:21 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:21 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5d94043f
+2015-12-21 11:15:21 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:21 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:21 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:21 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@39385b08
+2015-12-21 11:15:21 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:21 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:21 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:21 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:21 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:21 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:21 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:21 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:21 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:21 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:21 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7ab11143
+2015-12-21 11:15:21 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:21 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:21 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:21 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7977d820
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@17b56119
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@22a17cc
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6d575674
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1a834885
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (110)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (110)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@ac7ad3b
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7b41d5c5
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7067ba82
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@55851f59
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1d7b3c8
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@36b40cd6
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Literature)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5cdc59e1
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7c4afe7d
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@17a719f6
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4f999620
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@e06cc57
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@106df6f6
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4e154d4a
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1d4a3d2e
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2d7bcd8b
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4f8771a
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (109)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (109)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@49969416
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@285f4e6b
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@64d27151
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@12e0f043
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@39ef1bc6
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3bc7b6fe
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Basketball)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@66484a57
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@50377471
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@541a9917
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@8198275
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (221/x)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (221/x)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@9ecc0a5
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6f0d551b
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@68223f1b
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@9ed5c7e
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3bad4426
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@795ab2b7
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@aacc7fa
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3797d67
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6e6ccb30
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@55353ca
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@78ea4c81
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7db1592b
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@54e6204e
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@27b68be7
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (110)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (110)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5eeb4365
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@345734ea
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@61e32e21
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@34f913d5
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@18095a36
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@48a7cb71
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Cryptography)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@45de1237
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@319762c8
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@750cdd5e
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@78641287
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@737e3e11
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@252ac42e
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@509ce6c4
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@155d4bf
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Literature)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5a91f4e4
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4dbe4157
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (107)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (107)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2401a488
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4a76a3dc
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@45096a91
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5e9e7d08
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@60f2f242
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1adfcda7
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@195be7f7
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@cad055d
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (109)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (109)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5c56183b
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@d7ef341
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (221/x)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (221/x)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@58a88f5a
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1548411c
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4cde17e5
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5a0e5fed
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Phylosophy)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4d43787
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@f4d05d1
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (112)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (112)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5d1e7b38
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4c719b4b
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3826ea10
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4a640180
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4324438
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4f983433
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Basketball)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@31d104d0
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@512d467f
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1e3c4ea4
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@488be7d5
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3ba472fd
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@d627276
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@689f69e0
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@edbf075
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@25c616e7
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7f1f554
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@59a69d87
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@751b46f8
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@53a46a8f
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@10db77b3
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@326238b5
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2c4c9e88
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:250 - ResultSet closed
+2015-12-21 11:15:22 TRACE LectureDAO:254 - Statement closed
+2015-12-21 11:15:22 TRACE LectureDAO:258 - Connection closed
+2015-12-21 11:15:22 INFO  UniversityController:64 - if clouse defining the action
+2015-12-21 11:15:22 TRACE UniversityController:65 - viewall
+2015-12-21 11:15:22 INFO  UniversityController:128 - i'm in viewall clause
+2015-12-21 11:15:22 TRACE UniversityController:130 - /lectures.jsp
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  LectureDAO:210 - getAllLectures ()
+2015-12-21 11:15:22 TRACE LectureDAO:220 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@34659b02
+2015-12-21 11:15:22 TRACE LectureDAO:223 - Statement created
+2015-12-21 11:15:22 TRACE LectureDAO:226 - Get resultSet
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@79ee400
+2015-12-21 11:15:22 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1bf54a59
+2015-12-21 11:15:22 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:22 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:22 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:22 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:22 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:22 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@498028b0
+2015-12-21 11:15:22 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@52fda209
+2015-12-21 11:15:22 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:22 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:22 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:22 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:22 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:22 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:22 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@79a83d5c
+2015-12-21 11:15:22 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:22 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6a7b991f
+2015-12-21 11:15:22 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:22 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:22 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:22 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:22 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:22 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:22 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:22 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3340302c
+2015-12-21 11:15:22 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:22 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:22 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2f6be385
+2015-12-21 11:15:22 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:22 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:22 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:22 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:22 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:22 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:22 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:22 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:22 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:22 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1f335f58
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2385558
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (110)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (110)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@787c29d7
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@760d62e0
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@376fcff8
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1267173d
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4ac807c7
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@45ef4c5d
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Literature)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@69b96b09
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@135d81d8
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7729bf61
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@57f3a147
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@67c42d34
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@75b21111
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@337db36c
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@54cc6586
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@749ccfd1
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@77e8e168
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (109)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (109)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@21cfade1
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7afeaf57
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@23af4eff
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@70051fb5
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@24fd5136
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@746cd30c
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Basketball)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@37e2001b
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1d85813a
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@330afe23
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@10ff7cb2
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (221/x)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (221/x)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@591a5ae9
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3ef9f973
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@19e0cba7
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@349fdfc9
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4439eccf
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@60b39ad9
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5943bd77
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7498f429
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@226eb6a4
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6d68681e
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2f6da05c
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@44be2528
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@56ec7a0b
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6bf718f2
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (110)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (110)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7430337a
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@77cadf6c
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@21425f0f
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@666f5678
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2290aa92
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3143153c
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Cryptography)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6ee68413
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3549ba18
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@68662676
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@722e77d4
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3b824203
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5713ce9a
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1d26be5
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@30096d7c
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Literature)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@41cde666
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5bdb6c36
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (107)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (107)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7315e196
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@55e8ec44
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4345de8a
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6c0e42c0
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@458164ea
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1ba21c1
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Physics)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4f18179d
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@19eda624
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (109)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (109)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1dc04e10
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@1b9a4571
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (221/x)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (221/x)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2591e0c9
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5c52b341
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (202)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (202)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4ee900a4
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@15b35a10
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Phylosophy)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@8ae31ba
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@22b1cf31
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (112)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (112)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7af7f86c
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@78bae085
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (333/cpx)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (333/cpx)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2bcd41df
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7b449b1d
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (333)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (333)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@5e35512c
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4c6f97a7
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Basketball)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@333038c7
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@31e51ba4
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (106)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (106)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@8e72d2c
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@320dce4f
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (321/rsdrp)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (321/rsdrp)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4133b793
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6a7366de
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (404)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (404)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2b4002b9
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2221fc0d
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:232 - Creating lecture
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  SubjectDAO:86 - getSubject(Giometry)
+2015-12-21 11:15:23 TRACE SubjectDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4e62634a
+2015-12-21 11:15:23 TRACE SubjectDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE SubjectDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@2504e1f
+2015-12-21 11:15:23 TRACE SubjectDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE SubjectDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE SubjectDAO:112 - Creating Subject
+2015-12-21 11:15:23 TRACE SubjectDAO:123 - ResultSet closed
+2015-12-21 11:15:23 TRACE SubjectDAO:127 - Statement closed
+2015-12-21 11:15:23 TRACE SubjectDAO:131 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  ProfessorDAO:80 - getProfessor (111)
+2015-12-21 11:15:23 INFO  ProfessorDAO:289 - checkProfessorExistanceInDB (111)
+2015-12-21 11:15:23 TRACE ProfessorDAO:298 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@6d30db75
+2015-12-21 11:15:23 TRACE ProfessorDAO:301 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:316 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:320 - Connection closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:95 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@71b39e55
+2015-12-21 11:15:23 TRACE ProfessorDAO:98 - Statement created
+2015-12-21 11:15:23 TRACE ProfessorDAO:102 - Get resultSet
+2015-12-21 11:15:23 TRACE ProfessorDAO:107 - Creating Subject
+2015-12-21 11:15:23 TRACE ProfessorDAO:117 - ResultSet closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:121 - Statement closed
+2015-12-21 11:15:23 TRACE ProfessorDAO:125 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  GroupDAO:82 - getGroup (666/ussr)
+2015-12-21 11:15:23 INFO  GroupDAO:300 - checkGroupExistanceInDB (666/ussr)
+2015-12-21 11:15:23 TRACE GroupDAO:309 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@64b8fc95
+2015-12-21 11:15:23 TRACE GroupDAO:312 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:327 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:331 - Connection closed
+2015-12-21 11:15:23 TRACE GroupDAO:97 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@528127d
+2015-12-21 11:15:23 TRACE GroupDAO:100 - Statement created
+2015-12-21 11:15:23 TRACE GroupDAO:104 - Get resultSet
+2015-12-21 11:15:23 TRACE GroupDAO:109 - Creating Group
+2015-12-21 11:15:23 TRACE GroupDAO:119 - ResultSet closed
+2015-12-21 11:15:23 TRACE GroupDAO:123 - Statement closed
+2015-12-21 11:15:23 TRACE GroupDAO:127 - Connection closed
+2015-12-21 11:15:23 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:23 INFO  RoomDAO:85 - getRoom (505)
+2015-12-21 11:15:23 INFO  RoomDAO:297 - checkRoomExistanceInDB (505)
+2015-12-21 11:15:23 TRACE RoomDAO:306 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@4bdd1a49
+2015-12-21 11:15:23 TRACE RoomDAO:309 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:324 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:328 - Connection closed
+2015-12-21 11:15:23 TRACE RoomDAO:100 - Open connection
+2015-12-21 11:15:23 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@377120d0
+2015-12-21 11:15:23 TRACE RoomDAO:103 - Statement created
+2015-12-21 11:15:23 TRACE RoomDAO:107 - Get resultSet
+2015-12-21 11:15:23 TRACE RoomDAO:112 - Creating Room
+2015-12-21 11:15:23 TRACE RoomDAO:122 - ResultSet closed
+2015-12-21 11:15:23 TRACE RoomDAO:126 - Statement closed
+2015-12-21 11:15:23 TRACE RoomDAO:130 - Connection closed
+2015-12-21 11:15:23 TRACE LectureDAO:250 - ResultSet closed
+2015-12-21 11:15:23 TRACE LectureDAO:254 - Statement closed
+2015-12-21 11:15:23 TRACE LectureDAO:258 - Connection closed
+2015-12-21 11:15:23 TRACE UniversityController:141 - [Lecture PhysicsDate: 2015-12-12 12:00 |404professor: Steve, Jobs, Id: 111 321/rsdrp, Lecture GiometryDate: 2015-12-11 11:30 |333professor: Issak, Newton, Id: 110 321/rsdrp, Lecture LiteratureDate: 2015-12-01 11:00 |202professor: Viktor, Jushchenko, Id: 106 333/cpx, Lecture PhysicsDate: 2015-11-29 09:00 |202professor: Nikolo, Tesla, Id: 109 666/ussr, Lecture BasketballDate: 2015-11-28 15:00 |202professor: Viktor, Jushchenko, Id: 106 221/x, Lecture GiometryDate: 2015-11-26 18:30 |505professor: Steve, Jobs, Id: 111 666/ussr, Lecture GiometryDate: 2015-11-26 18:30 |404professor: Issak, Newton, Id: 110 666/ussr, Lecture CryptographyDate: 2015-11-26 10:00 |505professor: Steve, Jobs, Id: 111 666/ussr, Lecture LiteratureDate: 2015-11-26 10:00 |333professor: Stanislav, Marlinskaj, Id: 107 333/cpx, Lecture PhysicsDate: 2015-11-26 10:00 |202professor: Nikolo, Tesla, Id: 109 221/x, Lecture PhylosophyDate: 2015-11-25 13:00 |333professor: Aristotel, Aphinskik, Id: 112 333/cpx, Lecture BasketballDate: 2015-11-25 09:00 |404professor: Viktor, Jushchenko, Id: 106 321/rsdrp, Lecture GiometryDate: 2015-11-25 09:00 |505professor: Steve, Jobs, Id: 111 666/ussr]
+2015-12-21 11:15:28 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:28 INFO  SubjectDAO:143 - getAllSubject()
+2015-12-21 11:15:28 TRACE SubjectDAO:153 - Open connection
+2015-12-21 11:15:28 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@7c3aa90a
+2015-12-21 11:15:28 TRACE SubjectDAO:156 - Statement created
+2015-12-21 11:15:28 TRACE SubjectDAO:159 - Get resultSet
+2015-12-21 11:15:28 TRACE SubjectDAO:164 - Creating List<Subject>
+2015-12-21 11:15:28 TRACE SubjectDAO:181 - ResultSet closed
+2015-12-21 11:15:28 TRACE SubjectDAO:185 - Statement closed
+2015-12-21 11:15:28 TRACE SubjectDAO:189 - Connection closed
+2015-12-21 11:15:28 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:28 INFO  ProfessorDAO:136 - getAllProfessors()
+2015-12-21 11:15:28 TRACE ProfessorDAO:146 - Open connection
+2015-12-21 11:15:28 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@34774add
+2015-12-21 11:15:28 TRACE ProfessorDAO:149 - Statement created
+2015-12-21 11:15:28 TRACE ProfessorDAO:152 - Get resultSet
+2015-12-21 11:15:28 TRACE ProfessorDAO:157 - Creating List<Professor>
+2015-12-21 11:15:28 TRACE ProfessorDAO:173 - ResultSet closed
+2015-12-21 11:15:28 TRACE ProfessorDAO:177 - Statement closed
+2015-12-21 11:15:28 TRACE ProfessorDAO:181 - Connection closed
+2015-12-21 11:15:28 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:28 INFO  GroupDAO:138 - getAllGreoup ()
+2015-12-21 11:15:28 TRACE GroupDAO:148 - Open connection
+2015-12-21 11:15:28 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@39741646
+2015-12-21 11:15:28 TRACE GroupDAO:151 - Statement created
+2015-12-21 11:15:28 TRACE GroupDAO:154 - Get resultSet
+2015-12-21 11:15:28 TRACE GroupDAO:159 - Creating List<Group>
+2015-12-21 11:15:28 TRACE GroupDAO:175 - ResultSet closed
+2015-12-21 11:15:28 TRACE GroupDAO:179 - Statement closed
+2015-12-21 11:15:28 TRACE GroupDAO:183 - Connection closed
+2015-12-21 11:15:28 TRACE DAOFactory:49 - DB properties loaded: {db_host=localhost, db_driver=org.postgresql.Driver, db_username=postgres, db_pool.max=275, db_password=k1ll3r, db_port=5432, db_url=jdbc:postgresql://localhost/University}
+2015-12-21 11:15:28 INFO  RoomDAO:141 - getAllRooms()
+2015-12-21 11:15:28 TRACE RoomDAO:151 - Open connection
+2015-12-21 11:15:28 TRACE DAOFactory:73 - org.postgresql.jdbc4.Jdbc4Connection@3c836c44
+2015-12-21 11:15:28 TRACE RoomDAO:154 - Statement created
+2015-12-21 11:15:28 TRACE RoomDAO:157 - Get resultSet
+2015-12-21 11:15:28 TRACE RoomDAO:162 - Creating List<Rooms>
+2015-12-21 11:15:28 TRACE RoomDAO:178 - ResultSet closed
+2015-12-21 11:15:28 TRACE RoomDAO:182 - Statement closed
+2015-12-21 11:15:28 TRACE RoomDAO:186 - Connection closed
