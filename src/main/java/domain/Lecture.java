@@ -5,13 +5,21 @@ import java.util.Date;
 
 import domain.exceptions.*;
 
-
 public class Lecture {
+	private long id;
 	private Date date;
 	private Subject subject;
 	private Professor professor;
 	private Group group;
 	private Room room;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public Date getDate() {
 		return date;
@@ -62,6 +70,16 @@ public class Lecture {
 		this.room = room;
 	}
 
+	public Lecture(long id, Date date, Subject subject, Professor professor,
+			Group group, Room room) {
+		this.id = id;
+		this.date = date;
+		this.subject = subject;
+		this.professor = professor;
+		this.group = group;
+		this.room = room;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -96,8 +114,8 @@ public class Lecture {
 	@Override
 	public String toString() {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		return "Lecture " + subject + "Date: "+ formatter.format(date) + 
-				" |" + room + "professor: " + professor + " " + group;
+		return "Lecture " + subject + "Date: " + formatter.format(date) + " |"
+				+ room + "professor: " + professor + " " + group;
 	}
 
 }

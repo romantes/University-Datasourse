@@ -230,12 +230,13 @@ public class LectureDAO {
 			
 			while (resultSet.next()) {
 				logger.trace("Creating lecture");
+				long id = resultSet.getLong(1);
 				Date date = resultSet.getTimestamp(2);
 				Subject subject = new SubjectDAO().getSubject(resultSet.getString(3));
 				Professor professor = new ProfessorDAO().getProfessor(resultSet.getLong(4));
 				Group group = new GroupDAO().getGroup(resultSet.getString(5));
 				Room room = new RoomDAO().getRoom(resultSet.getString(6));
-				Lecture lecture = new Lecture(date, subject, professor, group, room);
+				Lecture lecture = new Lecture(id, date, subject, professor, group, room);
 				result.add(lecture);
 			}
 			

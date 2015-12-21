@@ -37,7 +37,13 @@ public class Main {
 		sc.setLectures(sc.extractLecturesByIdAndDate(dateLecture1,((long)2008)));
 		// then print
 		sc.printLecturesToConsole();
-
+		System.out.println();
+		
+		List<Professor> proflist = new ProfessorDAO().getAllProfessors();
+		for (Person p : proflist) {
+			System.out.println(p.getSecondName() + " " + p.getPersonId());
+		}
+		
 		} catch (DAOException e) {
 			e.printStackTrace();
 			System.out.println("Shoot (");

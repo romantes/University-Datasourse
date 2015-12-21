@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="style.css" rel="stylesheet" type="text/css">
 <title>University ScheduleBoard</title>
 </head>
-<body>
+
+<body bgcolor="grey">
 <center><img src="logoUniv.jpg" /></center>
-<form action = "Servlet">
-	<center>	<b>input date in format: yyyy.MM.DD (Ex.: 2015.11.26)</b> </center>
-	<p>
-	<center><input name = "inputDate"/></center>
-	<p>
-	<center>	<b>input person id </b>  </center>
-	<p>
-	<center><input name = "personalId"/> </center>
-	<p>
-	<center> <input type = "submit"/> </center>
-</form>
+<center>
+	<div id = "text">
+		<p class="superBig">
+			<a href="about.jsp">About Us</a>
+			<a href="personal.jsp">Get Personal Schedule</a>
+			<a href= "edit.jsp">Add Lecture</a>
+			<a href="Servlet?action=viewall">View all</a>					
+		</p> 
+		<p class="copyright"> &copy; 2015 MentatNemchisky. All rights reserved </p>
+	</div>
+</center>
 </body>
 </html>

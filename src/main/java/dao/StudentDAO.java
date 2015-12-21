@@ -5,10 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
+import domain.Room;
 import domain.Student;
 
 public class StudentDAO {
@@ -130,6 +133,64 @@ public class StudentDAO {
 			}
 		}
 		return student;
+	}
+	
+	public List<Student> getAllStudents() throws DAOException {
+		
+		logger.info("getAllStudent()");
+
+		String sql = "SELECT * FROM students";
+
+		List<Student> allStudent = null;
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet resultSet = null;
+
+		try {
+			logger.trace("Open connection");
+			connection = factory.getConnection(properties);
+
+			logger.trace("Statement created");
+			statement = connection.createStatement();
+
+			logger.trace("Get resultSet");
+			resultSet = statement.getGeneratedKeys();
+			resultSet = statement.executeQuery(sql);
+			resultSet.next();
+
+			logger.trace("Creating List<Student>");
+			allStudent = new ArrayList<>();
+
+			while (resultSet.next()) {
+				Student student = new Student(resultSet.getLong(1),
+						resultSet.getString(2), resultSet.getString(3));
+				student.setGoupNumber(resultSet.getString(4));
+				allStudent.add(student);
+			}
+
+		} catch (SQLException e) {
+			logger.error(e);
+			throw new DAOException(e);
+		} finally {
+			try {
+				if (resultSet != null) {
+					resultSet.close();
+					logger.trace("ResultSet closed");
+				}
+				if (statement != null) {
+					statement.close();
+					logger.trace("Statement closed");
+				}
+				if (connection != null) {
+					connection.close();
+					logger.trace("Connection closed");
+				}
+			} catch (SQLException e) {
+				logger.error(e);
+				throw new DAOException(e);
+			}
+		}
+		return allStudent;
 	}
 	
 	public int updateStudent(long id, String field, String value)

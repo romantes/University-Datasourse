@@ -1,0 +1,27 @@
+#text
+{
+	position: absolurte;
+	top:100px;
+	left:100px;
+}
+.regular
+{
+	
+	font-family: Verdana;
+	color: white;
+}
+
+.superBig
+{
+	font-family: Verdana;
+	font-size:16pt;
+	font-weight: bold;
+	font-color: white;
+}
+
+.copyright
+{
+	font-size: 9pt;
+	font-style: italic;
+	text-transform: capitalize;
+}

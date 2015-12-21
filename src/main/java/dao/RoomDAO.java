@@ -5,10 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
+import domain.Professor;
 import domain.Room;
 
 public class RoomDAO {
@@ -106,7 +109,7 @@ public class RoomDAO {
 			resultSet = statement.executeQuery();
 			resultSet.next();
 
-			logger.trace("Creating Subject");
+			logger.trace("Creating Room");
 			Room = new Room(resultSet.getLong(1),
 					resultSet.getString(2));
 		} catch (SQLException e) {
@@ -132,6 +135,62 @@ public class RoomDAO {
 			}
 		}
 		return Room;
+	}
+	
+	public List<Room> getAllRooms() throws DAOException {
+		logger.info("getAllRooms()");
+
+		String sql = "SELECT * FROM rooms";
+
+		List<Room> allRooms = null;
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet resultSet = null;
+
+		try {
+			logger.trace("Open connection");
+			connection = factory.getConnection(properties);
+
+			logger.trace("Statement created");
+			statement = connection.createStatement();
+
+			logger.trace("Get resultSet");
+			resultSet = statement.getGeneratedKeys();
+			resultSet = statement.executeQuery(sql);
+			resultSet.next();
+
+			logger.trace("Creating List<Rooms>");
+			allRooms = new ArrayList<>();
+
+			while (resultSet.next()) {
+				Room room = new Room(resultSet.getLong(1),
+						resultSet.getString(2));
+				allRooms.add(room);
+			}
+
+		} catch (SQLException e) {
+			logger.error(e);
+			throw new DAOException(e);
+		} finally {
+			try {
+				if (resultSet != null) {
+					resultSet.close();
+					logger.trace("ResultSet closed");
+				}
+				if (statement != null) {
+					statement.close();
+					logger.trace("Statement closed");
+				}
+				if (connection != null) {
+					connection.close();
+					logger.trace("Connection closed");
+				}
+			} catch (SQLException e) {
+				logger.error(e);
+				throw new DAOException(e);
+			}
+		}
+		return allRooms;
 	}
 	public int updateRoom(String oldroomnumber, String newroomnumber)
 			throws DAOException {
