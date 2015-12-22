@@ -27,7 +27,7 @@ import dao.LectureDAO;
 /**
  * Servlet implementation class UniversityServlet
  */
-@WebServlet(description = "ScheduleBoard", urlPatterns = { "/Servlet" })
+@WebServlet(description = "ScheduleBoard", urlPatterns = { "/UniversityController" })
 public class UniversityController extends HttpServlet {
 
 	private static final Logger logger = Logger

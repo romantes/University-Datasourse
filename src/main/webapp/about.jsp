@@ -27,7 +27,7 @@ Vivamus tristique neque a tempor pretium. Proin id risus sed est porta dictum. F
 			<a href="about.jsp">About Us</a>
 			<a href="personal.jsp">Get Personal Schedule</a>
 			<a href= "edit.jsp">Add Lecture</a>
-			<a href="Servlet?action=viewall">View all</a>					
+			<a href="UniversityController?action=viewall">View all</a>					
 		</p> 
 		<p class="copyright"> &copy; 2015 MentatNemchisky. All rights reserved </p>
 	</div>

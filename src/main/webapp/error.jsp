@@ -25,7 +25,7 @@
 			<a href="about.jsp">About Us</a>
 			<a href="personal.jsp">Get Personal Schedule</a>
 			<a href= "edit.jsp">Add Lecture</a>
-			<a href="Servlet?action=viewall">View all</a>					
+			<a href="UniversityController?action=viewall">View all</a>					
 		</p> 
 	</div>
 	</center>	

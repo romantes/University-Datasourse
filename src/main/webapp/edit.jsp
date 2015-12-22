@@ -69,7 +69,7 @@
 			<p class="superBig">
 				<a href="about.jsp">About Us</a> <a href="personal.jsp">Get
 					Personal Schedule</a> <a href="edit.jsp">Add Lecture</a> <a
-					href="Servlet?action=viewall">View all</a>
+					href="UniversityController?action=viewall">View all</a>
 			</p>
 			<p class="copyright">&copy; 2015 MentatNemchisky. All rights
 				reserved</p>

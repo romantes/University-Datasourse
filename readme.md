@@ -1,7 +1,12 @@
 to run this project you need:
 0. create University database using /src/main/resources/db_dump.sql
+<<<<<<< HEAD
 1. `to set correct path to /log/log.txt in /src/main/resources/log4j.properties
 2. congfigure db_url = db_username = db_password = properties in /src/main/resources/db.properties
+=======
+1. to set correct path to /log/log.txt in /src/main/resources/log4j.properties
+2.	congfigure db_url = db_username = db_password = properties in /src/main/resources/db.properties
+>>>>>>> master
 3. start web application from index.jsp
 4. input date the same as in example above the field of input date;
 5. use following id:
