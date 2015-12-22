@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.*, domain.*, dao.*"%>
+<%@ page import="java.io.*,java.util.*, domain.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,11 +20,11 @@
 		<input name="action" value=edit type=hidden>
 		<input name="inputDate" type="text" id='datetimepicker'/>
 			<%
-				List<Subject> subjectList = new SubjectDAO().getAllSubjects();
-				List<Professor> professorList = new ProfessorDAO()
-						.getAllProfessors();
-				List<Group> groupList = new GroupDAO().getAllGroup();
-				List<Room> roomList = new RoomDAO().getAllRooms();
+				ScheduleBoard sc = new ScheduleBoard();
+				List<Subject> subjectList = sc.getAllSubjects();
+				List<Professor> professorList = sc.getAllProfessors();
+				List<Group> groupList = sc.getAllGroups();
+				List<Room> roomList = sc.getAllRooms();
 
 				out.print("<select  name='inputSubject'>"
 						+ "<option disabled> choose subject </option>");

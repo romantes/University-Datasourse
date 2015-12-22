@@ -39,7 +39,7 @@ public class Main {
 		sc.printLecturesToConsole();
 		System.out.println();
 		
-		List<Professor> proflist = new ProfessorDAO().getAllProfessors();
+		List<Professor> proflist = sc.getAllProfessors();
 		for (Person p : proflist) {
 			System.out.println(p.getSecondName() + " " + p.getPersonId());
 		}

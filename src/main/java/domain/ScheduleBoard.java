@@ -14,6 +14,7 @@ public class ScheduleBoard {
 	public ScheduleBoard() throws DAOException {
 		lectures = new LectureDAO().getAllLectures();
 	}
+
 	public Person getPerson() {
 		return person;
 	}
@@ -29,7 +30,7 @@ public class ScheduleBoard {
 	public void setLectures(List<Lecture> lectures) {
 		this.lectures = lectures;
 	}
-	
+
 	public List<Lecture> extractLecturesByDate(List<Lecture> lectures, Date date) {
 		ArrayList<Lecture> result = new ArrayList<Lecture>();
 		for (Lecture l : lectures) {
@@ -67,7 +68,7 @@ public class ScheduleBoard {
 
 	public List<Lecture> extractLecturesByIdAndDate(Date date, Long personId)
 			throws PersonExistsException, DAOException {
-		
+
 		String idpersonStringid = Long.toString(personId);
 
 		if (idpersonStringid.charAt(0) == '1') {
@@ -101,5 +102,21 @@ public class ScheduleBoard {
 			throw new LectureExistsException(
 					"List of lectures which you trying to print is not exists");
 		}
+	}
+
+	public List<Subject> getAllSubjects() throws DAOException {
+		return new SubjectDAO().getAllSubjects();
+	}
+
+	public List<Professor> getAllProfessors() throws DAOException {
+		return new ProfessorDAO().getAllProfessors();
+	}
+
+	public List<Group> getAllGroups() throws DAOException {
+		return new GroupDAO().getAllGroups();
+	}
+
+	public List<Room> getAllRooms() throws DAOException {
+		return new RoomDAO().getAllRooms();
 	}
 }

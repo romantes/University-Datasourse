@@ -134,7 +134,7 @@ public class GroupDAO {
 		return group;
 	}
 	
-	public List<Group> getAllGroup() throws DAOException {
+	public List<Group> getAllGroups() throws DAOException {
 		logger.info("getAllGreoup ()");
 
 		String sql = "SELECT * FROM groups";
